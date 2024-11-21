@@ -1,5 +1,6 @@
 <template>
   <div class="contenedor">
+    <div class="fondo-estatico"></div>
     <div class="xd">
       <div class="zona-principal">
         <div class="filtros">
@@ -39,8 +40,6 @@
                 class="filtros-toggle"
                 v-model="popularity"
                 label="Ordenar por popularidad"
-                left-label="Fecha de lanzamiento"
-                right-label="Popularidad"
               />
             </q-item-section>
 
@@ -150,17 +149,29 @@ export default {
   padding: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
+}
+
+.fondo-estatico {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url("../assets/fondoLogin.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  z-index: -1;
 }
+
 .xd {
   margin: 20px auto;
   max-width: 80%;
   display: flex;
   flex-direction: column;
+  z-index: 1; /* Asegura que el contenido esté por encima del fondo */
 }
 
 .zona-principal {
