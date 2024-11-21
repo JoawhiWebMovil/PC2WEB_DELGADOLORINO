@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const apiKey = "126fdc5ea60c66cbf6649c79796f74fc";
+const apiKey =
+  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjZmZGM1ZWE2MGM2NmNiZjY2NDljNzk3OTZmNzRmYyIsIm5iZiI6MTczMjE3NDQyNC40ODY3ODUsInN1YiI6IjY3M2VjNWY3YWRlOTMxMGYzZmRmOTljNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.FnosQB73C_H4JqNRNMJbTGZESE-fjyljx-0GXmnidVk";
 
 export const fetchMovies = async (search, popularity, releaseDateFilter) => {
   const url = search

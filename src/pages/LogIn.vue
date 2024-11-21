@@ -109,7 +109,7 @@ export default {
   max-width: 400px;
   width: 100%;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(245, 146, 146, 0.459);
   padding: 20px;
   border-radius: 10px;
 }
